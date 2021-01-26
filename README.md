@@ -34,11 +34,11 @@ The function will perform these operations:
 1. Download and expand the data from the website into the folder "data" by default, and creates a folder under it, "UCI HAR Dataset", with the data files.
 2.  For each folder, "train" or "test" noted as ***```folder_name```***, these steps are performed:
 
-    a.  Retrieve the main set of measurement data at ```folder_name```/X_```folder_name```.txt
-    b.  Add the subject column from subject_```folder_name```/```folder_name```.txt to the main set.
-    c.  Add the activity names in a column using ```folder_name```/y_```folder_name```.txt to look up the activity label in activity_labels.txt
-    d.  Add the values in features.txt as the column headers, and modifying the names to more readable ones
-    e.  Filter out only columns with standard deviation or means values.
+    1.  Retrieve the main set of measurement data at ```folder_name```/X_```folder_name```.txt
+    2.  Add the subject column from subject_```folder_name```/```folder_name```.txt to the main set.
+    3.  Add the activity names in a column using ```folder_name```/y_```folder_name```.txt to look up the activity label in activity_labels.txt
+    4.  Add the values in features.txt as the column headers, and modifying the names to more readable ones
+    5.  Filter out only columns with standard deviation or means values.
     
 3.  The two data sets are then unioned to create a single set of standard deviation and means values for the students and activities.
 4.  A second data set is then also created, grouping by student and activity, with the mean of each measurement column.
