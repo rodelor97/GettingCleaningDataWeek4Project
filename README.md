@@ -45,9 +45,9 @@ The function will perform these operations:
   - accelerometer_activity_subject_means.csv, for the grouped data set by student and activity
 
 
-## Codebook Creation Replication Steps
+## Codebooks
 
-To create a new set of codebooks for the any newly created tidy set, these steps will need to be taken
+Codebooks are found on the parent directory, AccelerometerDataCodebook.html and AccelerometerGroupedDataCodebook.html. If you have downloaded and created a new tidy set, you may want to create a new set of codebooks for the data. To create a new set of codebooks for the any newly created tidy set, these steps will need to be taken
 
 1. From the RStudio command prompt in the project folder run commands to install the required libraries
    + install.packages("codebook")
