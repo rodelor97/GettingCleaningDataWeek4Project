@@ -95,6 +95,7 @@ create_tidy_data <- function(
   unlink(tidy_data_folder, recursive = TRUE)
   dir.create(tidy_data_folder)
   fwrite(fullDF, file = paste(tidy_data_folder, "accelerometer_data.csv", sep="/"))
+  write.table(fullDF, file = "data/accelerometer_send.txt", row.names = FALSE)
   fwrite(aggDF, file = paste(tidy_data_folder, "accelerometer_activity_subject_means.csv", sep="/"))
   print("END")
   return_list <- list(result_set=fullDF, aggregated_set=aggDF)

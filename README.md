@@ -47,9 +47,9 @@ The function will perform these operations:
   - accelerometer_activity_subject_means.csv, for the grouped data set by student and activity
 
 
-## Codebooks
+## Codebook and Representation Generation
 
-Codebooks are found on the parent directory, AccelerometerDataCodebook.html and AccelerometerGroupedDataCodebook.html. If you have downloaded and created a new tidy set, you may want to create a new set of codebooks for the data. To create a new set of codebooks for the any newly created tidy set, these steps will need to be taken
+Codebook templates, CodeBook.Rmd and CodeBookGrouped.Rmd, are used to generate codebook representations in md and html formats. In order to create new representations, you will need to create the codebook data used in the generation process. To do this, follow these steps
 
 1. From the RStudio command prompt in the project folder run commands to install the required libraries
    + install.packages("codebook")
@@ -59,9 +59,14 @@ Codebooks are found on the parent directory, AccelerometerDataCodebook.html and 
    + install.packages("dplyr")
    + install.packages("data.table")
 2. Run the commands to create the codebook sources
+   + ```source("codebookSourceCreator.R")```
    + ```create_accelerometer_codebook()```
-   + ```create_accelerometer_grouped_codebook```
-3. From RStudio open each codebook markdown file, AccelerometerDataCodebook.Rmd and AccelerometerGroupedDataCodebook.Rmd, and choose Knit from the tab menu. This will create files AccelerometerDataCodebook.html and AccelerometerGroupedDataCodebook.html
+   + ```create_accelerometer_grouped_codebook()```
+   
+Once the codebook source is generated, we can create the codebooks:
+
+1. From RStudio open Codebook.Rmd for the main data set codebook, or CodebookGrouped.md, for the aggregated grouped data set
+2. Choose Knit from the tab menu. This will create the md and html codebook representations.
 
 
 ## License:
