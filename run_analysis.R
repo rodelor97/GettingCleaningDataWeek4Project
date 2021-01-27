@@ -132,7 +132,7 @@ prepend_column_name_with_groupedmeans <- function(col_name) {
   if(col_name == "grouped_subject" || col_name == "grouped_activity") {
     return(col_name)
   } else {
-    return(paste("grouped_studentactivity_mean_of_", col_name))
+    return(paste("grouped_studentactivity_mean_of_", col_name, sep=""))
   }
 }
 
