@@ -66,7 +66,7 @@ Codebook templates, CodeBook.Rmd and CodeBookGrouped.Rmd, are used to generate c
 Once the codebook source is generated, we can create the codebooks:
 
 1. From RStudio open Codebook.Rmd for the main data set codebook, or CodebookGrouped.md, for the aggregated grouped data set
-2. Choose Knit from the tab menu. This will create the md and html codebook representations.
+2. Choose "Knit" > "Knit html" from the tab menu. This will create the md and html codebook representations.
 
 
 ## License:
