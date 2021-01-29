@@ -1,5 +1,6 @@
 ---
 title: "Codebook"
+always_allow_html: true
 output:
   html_document:
     keep_md: true
@@ -8,12 +9,14 @@ output:
     toc_float: true
     code_folding: 'hide'
     self_contained: true
+    fig_width: 3.5
+    fig_height: 2.5
   pdf_document:
     toc: yes
     toc_depth: 4
     latex_engine: xelatex
-  md_document:
-    variant: markdown_github
+    fig_width: 3.5
+    fig_height: 2.5
 ---
 
 Set up Code book options

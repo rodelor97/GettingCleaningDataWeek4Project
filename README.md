@@ -58,6 +58,7 @@ Codebook templates, CodeBook.Rmd and CodeBookGrouped.Rmd, are used to generate c
    + install.packages("labelled")
    + install.packages("dplyr")
    + install.packages("data.table")
+   + For pdf: install.packages("tinytex")
 2. Run the commands to create the codebook sources
    + ```source("codebookSourceCreator.R")```
    + ```create_accelerometer_codebook()```
@@ -66,7 +67,9 @@ Codebook templates, CodeBook.Rmd and CodeBookGrouped.Rmd, are used to generate c
 Once the codebook source is generated, we can create the codebooks:
 
 1. From RStudio open Codebook.Rmd for the main data set codebook, or CodebookGrouped.md, for the aggregated grouped data set
-2. Choose "Knit" > "Knit html" from the tab menu. This will create the md and html codebook representations.
+2. Choose "Knit" > "Knit to html" from the tab menu. This will create the md and html codebook representations.
+  + For PDF, you can choose "Knit" > "Knit to PDF"
+
 
 
 ## License:
